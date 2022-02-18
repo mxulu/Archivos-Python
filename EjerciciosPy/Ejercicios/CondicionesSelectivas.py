@@ -21,4 +21,18 @@ if(Num1%2==0):
     pass
 else:
     print("no fue un número par")
-    
+
+
+#Switcher
+Num1=int(input("Ingrese número de día de la semana:"))
+DiasSemana={
+    1:"Lunes",
+    2:"Martes",
+    3:"Miércoles",
+    4:"Jueves",
+    5:"Viernes",
+    6:"Sábado",
+    7:"Domingo",
+}
+
+print("El día de la semana para el número",Num1,"es:",DiasSemana.get(Num1,"No es un día de la semana"))
