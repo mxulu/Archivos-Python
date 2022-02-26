@@ -36,3 +36,49 @@ DiasSemana={
 }
 
 print("El día de la semana para el número",Num1,"es:",DiasSemana.get(Num1,"No es un día de la semana"))
+
+
+#Excepciones
+try:
+    print("Estoy en el bloque de TRY")
+    print(int(input("Número1"))/int(input("Número2")))
+except ZeroDivisionError:
+    print("Capturé un error de división por cero")
+except:
+    print("Detecte un error en las líneas anteriores")
+else:
+    print("No hubieron errores")
+
+
+#Ejemplo
+archivo=open("c:\\Json\\prueba.txt","w")
+try:
+    archivo.write("Este es el nuevo contenido del archivo")
+except:
+    print("No se pudo")
+else:
+    print("archivo modificado exitosamente")
+finally:
+    archivo.close()
+    print("se cerró el arhivo exitosamente")
+
+
+import os
+carpeta="c:\\Json\\Semana3.json"
+nombrearchivo=os.path.basename(carpeta)
+directorio=os.path.dirname(carpeta)
+
+print(nombrearchivo)
+print(directorio)
+
+
+arch=os.path.exists("c:\\Json\\Semana2.json")
+print(arch)
+
+
+
+
+
+
+
+
