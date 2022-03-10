@@ -1,4 +1,7 @@
 #IF-ELSE de una línea
+from email.errors import MessageError
+
+
 Num1=int(input("Ingrese número 1:"))
 Num2=int(input("Ingrese número 2:"))
 
@@ -37,6 +40,25 @@ DiasSemana={
 
 print("El día de la semana para el número",Num1,"es:",DiasSemana.get(Num1,"No es un día de la semana"))
 
+
+
+Num1=int(input("Ingrese número del mes:"))
+Meses={
+    1:"Enero",
+    2:"Febrero",
+    3:"Marzo",
+    4:"Abril",
+    5:"Mayo",
+    6:"Junio",
+    7:"Julio",
+    8:"Agosto",
+    9:"Septiembre",
+    10:"Octubre",
+    11:"Noviembre",
+    12:"Diciembre",
+}
+
+print("El mes número",Num1,"es",Meses.get(Num1,"El número no corresponde a un mes válido"))
 
 #Excepciones
 try:

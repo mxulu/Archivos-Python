@@ -1,16 +1,17 @@
-Num1=int(input("Ingrese el número final de pasos para la serie Fibonacci:"))
-if(Num1<2):
-    print("Por favor ingrese un número mayor a 2")
-    exit()
-x=0
-y=1
-print(x, end=" ")
+Num1=int(input("Ingrese número del mes:"))
+Meses={
+    1:"Enero",
+    2:"Febrero",
+    3:"Marzo",
+    4:"Abril",
+    5:"Mayo",
+    6:"Junio",
+    7:"Julio",
+    8:"Agosto",
+    9:"Septiembre",
+    10:"Octubre",
+    11:"Noviembre",
+    12:"Diciembre",
+}
 
-def FibonacciRecursivo(PrimerNum, SegundoNum, ConteoSecuencia, límite):
-    if (ConteoSecuencia==límite):
-        return SegundoNum
-    else:
-        print(SegundoNum, end=" ")
-        return FibonacciRecursivo(SegundoNum, PrimerNum+SegundoNum,ConteoSecuencia+1,límite)
-
-FibonacciRecursivo(x,y,1,Num1)  
+print("El mes número",Num1,"es",Meses.get(Num1,"El número no corresponde a un mes válido"))
